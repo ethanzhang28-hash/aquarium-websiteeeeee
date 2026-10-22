@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search the Dragons exhibit archive and read profiles of featured reptiles.">
+  <title>Exhibits | Aquarium Adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Aquarium Adventure home"><span class="brand-mark" aria-hidden="true">A</span><span>AQUARIUM <span class="brand-light">ADVENTURE</span><small>VANCOUVER, B.C.</small></span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="tickets.html">Tickets</a><a href="exhibits.html" aria-current="page">Exhibits</a><a href="links.html">Links</a><a href="member-benefits.html">Member Benefits</a>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="page-heading">
+      <p class="eyebrow">EXPLORE &amp; DISCOVER</p>
+      <h1>Exhibit archive</h1>
+      <p>Search the Dragons exhibit highlights, explore the experience, and meet the reptiles behind the legends.</p>
+    </section>
+    <section class="section">
+      <label class="search-label" for="exhibit-search">Search exhibit highlights</label>
+      <input class="search-input" type="search" id="exhibit-search" placeholder="Try “tegu”, “talk”, or “hands-on”">
+      <p id="search-status" class="search-status" aria-live="polite">Showing all exhibit results.</p>
+      <div class="archive-grid" id="exhibit-archive">
+        <article class="archive-card" data-exhibit data-search="dragons featured exhibit reptiles habitats mythical creatures">
+          <img src="images/dragons-hero.jpg" alt="Vancouver Aquarium Dragons exhibit">
+          <div><span class="tag">LIMITED-TIME EXHIBIT</span><h2>Dragons: Step into the lair</h2><p>Explore immersive habitats and meet the scaly superstars of the exhibit. Extended through January 2027.</p></div>
+        </article>
+        <article class="archive-card" data-exhibit data-search="hands on tactile discovery scales activities">
+          <img src="images/hands-on.jpg" alt="Hands-on tactile display from the Dragons exhibit">
+          <div><span class="tag">INTERACTIVE</span><h2>Hands-on discoveries</h2><p>Get close to detailed tactile models and explore the textures and features of reptilian stars.</p></div>
+        </article>
+        <article class="archive-card" data-exhibit data-search="daily dragon presentations animal care expert talks schedule">
+          <img src="images/presentation.jpg" alt="Daily dragon presentation">
+          <div><span class="tag">DAILY PRESENTATIONS</span><h2>Meet the animal-care team</h2><p>Daily presentations share facts about the animals. Check the aquarium schedule for current times.</p></div>
+        </article>
+        <article class="archive-card" data-exhibit data-search="larger than life sculptures dragon myths legends">
+          <img src="images/dragon-sculpture.jpg" alt="Larger-than-life dragon sculpture">
+          <div><span class="tag">IMMERSIVE DISCOVERY</span><h2>Legends brought to life</h2><p>Explore dragon-cave-inspired habitats and supersized sculptures throughout the experience.</p></div>
+        </article>
+      </div>
+      <p class="no-results" id="no-results" hidden>No exhibit highlights match that search. Try another word.</p>
+    </section>
+
+    <section class="section profile-section">
+      <div class="section-heading"><div><p class="eyebrow">REAL-LIFE DRAGONS</p><h2>Meet the featured reptiles</h2></div><p>These animals are featured on the official Dragons exhibit page.</p></div>
+      <div class="reptile-gallery" aria-label="Reptile photographs from the Dragons exhibit">
+        <img src="images/reptile-01.jpg" alt="Crocodilian reptile pictured in the Dragons exhibit">
+        <img src="images/reptile-02.jpg" alt="Green snake pictured in the Dragons exhibit">
+        <img src="images/reptile-03.jpg" alt="Green lizard pictured in the Dragons exhibit">
+        <img src="images/reptile-04.jpg" alt="Lizard pictured in a rocky habitat in the Dragons exhibit">
+      </div>
+      <p class="fine-print">The exhibit photographs are shown as a gallery and are not individually matched to the profiles below.</p>
+      <div class="profile-grid">
+        <article class="profile-card" data-exhibit data-search="red tegu reptile lizard"><h3>Red tegu</h3><p>A powerful lizard among the exhibit's scaly superstars.</p></article>
+        <article class="profile-card" data-exhibit data-search="gila monster reptile lizard"><h3>Gila monster</h3><p>A distinctive reptile whose fearsome reputation echoes dragon tales.</p></article>
+        <article class="profile-card" data-exhibit data-search="green tree python reptile snake"><h3>Green tree python</h3><p>Its graceful movements recall the sky serpents of myth.</p></article>
+        <article class="profile-card" data-exhibit data-search="kimberley rock monitor reptile lizard"><h3>Kimberley rock monitor</h3><p>One of the newer legends added to the Dragons exhibit.</p></article>
+        <article class="profile-card" data-exhibit data-search="razor toothed caiman reptile"><h3>Razor-toothed caiman</h3><p>A powerful reptile whose presence evokes a dragon's lair.</p></article>
+      </div>
+    </section>
+
+    <section class="section feedback-section" id="feedback">
+      <div><p class="eyebrow">SHARE YOUR THOUGHTS</p><h2>Comments &amp; feedback</h2><p>Leave a note about this student project. Feedback is saved only in this browser and is not sent to the aquarium.</p></div>
+      <form id="feedback-form" class="feedback-form">
+        <label for="feedback-name">Your name</label>
+        <input id="feedback-name" name="name" maxlength="60" required>
+        <label for="feedback-message">Your feedback</label>
+        <textarea id="feedback-message" name="message" rows="4" maxlength="500" required></textarea>
+        <button class="button button-bright" type="submit">Post feedback</button>
+        <p id="feedback-status" class="search-status" role="status" aria-live="polite"></p>
+      </form>
+      <div class="feedback-list-wrap"><h3>Visitor notes</h3><ul id="feedback-list" class="feedback-list" aria-live="polite"></ul></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a href="links.html#image-source">Image source &amp; official resources</a><span>© Aquarium Adventure student project</span></footer>
+</body>
+</html>
